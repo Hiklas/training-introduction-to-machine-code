@@ -53,6 +53,14 @@ TODO
 * [MacTeX](http://www.tug.org/mactex/index.html)
 
 
+### Build Tools
+
+* [GNU Make](https://www.gnu.org/software/make/manual/html_node/index.html#SEC_Contents)
+* [Make pattern rules](https://www.gnu.org/software/make/manual/html_node/Pattern-Examples.html#Pattern-Examples)
+* [Why is make removing intermediate files](https://stackoverflow.com/questions/47447369/gnu-make-removing-intermediate-files)
+* [Special targets including .PRECIOUS](https://www.gnu.org/software/make/manual/html_node/Special-Targets.html)
+
+
 ### Python 
 
 * [py65 documentation](https://py65.readthedocs.io/en/latest/)

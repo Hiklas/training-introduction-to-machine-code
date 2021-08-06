@@ -283,4 +283,6 @@ TSWLatexianTemp*
 .\#*
 \#*
 
+# Output file
+*.pdf
 
