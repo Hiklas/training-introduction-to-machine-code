@@ -12,11 +12,14 @@ buildpdfs: 001-Overview.pdf
 	dvipdf $<
 
 %.dvi: %.tex
+	# This is a hack to make sure that TOC is updated, I hope there
+	# is a better way to do this than running twice :( 
+	latex $<
 	latex $<
 
 
 clean:
-	rm *.aux *.log *.nav *.out *.pdf *.snm *.toc *.dvi *~
+	rm -f *.aux *.log *.nav *.out *.pdf *.snm *.toc *.dvi *~
 
 
 
