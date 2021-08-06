@@ -57,6 +57,9 @@ make buildpdfs
 * [TeX Live Guide](https://www.tug.org/texlive/doc/texlive-en/texlive-en.html)
 * [Beamer guide](http://tug.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf)
 * [MacTeX](http://www.tug.org/mactex/index.html)
+* [PGF Portable Graphics Format](https://github.com/pgf-tikz/pgf)
+* [PGF Manual](https://pgf-tikz.github.io/pgf/pgfmanual.pdf)
+* [Beamer Theme Gallery](https://deic-web.uab.cat/~iblanes/beamer_gallery/index.html)
 
 
 ### Build Tools
