@@ -34,6 +34,14 @@ This is actually quite large (4Gb) so can take some time to download
 TODO
 
 
+### Starting with Beamer solution
+
+* Copying from `/usr/local/texlive/2021/texmf-dist/doc/latex/beamer/solutions/generic-talks/generic-ornate-15min-45min.en.tex` on Mac
+* This will would be under `~/texmf/doc/latex/beamer/solutions/generic-talks/generic-ornate-15min-45min.en.tex` (check this path) if installed with `tlmgr` for a given user rather than globally
+* Lots of hacking of the template
+* 
+
+
 
 
 ## References
@@ -49,4 +57,9 @@ TODO
 
 * [py65 documentation](https://py65.readthedocs.io/en/latest/)
 
+
+### Licenses
+
+* [GNU Free Documentation License](https://www.gnu.org/licenses/fdl-1.3.en.html)
+* [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
