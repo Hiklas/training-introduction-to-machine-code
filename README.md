@@ -1,4 +1,4 @@
-# training-introduction-to-machine-code
+# Introduction To Machine Code Training
 
 ## Overview
 
@@ -15,7 +15,7 @@ are lots of emulators, tools, and even hardware out there that can run
 
 * Python - this is for running the simple 6502 examples
 * TeX - specifically the TeXLive distribution for the slides and other material
-
+* GNUMake - for building documentation
 
 
 ## Notes
@@ -39,7 +39,13 @@ TODO
 * Copying from `/usr/local/texlive/2021/texmf-dist/doc/latex/beamer/solutions/generic-talks/generic-ornate-15min-45min.en.tex` on Mac
 * This will would be under `~/texmf/doc/latex/beamer/solutions/generic-talks/generic-ornate-15min-45min.en.tex` (check this path) if installed with `tlmgr` for a given user rather than globally
 * Lots of hacking of the template
-* 
+* Build the `01-IntroductionToMachineCode` using the following command
+
+```
+make buildpdfs
+```
+
+* Can also clean up with plethora of files with the `clean` target
 
 
 
