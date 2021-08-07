@@ -60,6 +60,9 @@ make buildpdfs
 * [PGF Portable Graphics Format](https://github.com/pgf-tikz/pgf)
 * [PGF Manual](https://pgf-tikz.github.io/pgf/pgfmanual.pdf)
 * [Beamer Theme Gallery](https://deic-web.uab.cat/~iblanes/beamer_gallery/index.html)
+* [Tikz Circuit Gallery](https://texdoc.org/serve/circuitikz/0)
+* [SI Units package](https://ctan.org/pkg/siunitx)
+* [SI Units manual](https://anorien.csc.warwick.ac.uk/mirrors/CTAN/macros/latex/contrib/siunitx/siunitx.pdf)
 
 
 ### Build Tools

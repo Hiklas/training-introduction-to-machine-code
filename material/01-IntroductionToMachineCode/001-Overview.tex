@@ -20,14 +20,19 @@
   \usetheme{CambridgeUS}
 }
 
-
 \usepackage[english]{babel}
 \usepackage[latin1]{inputenc}
 \usepackage[T1]{fontenc}
 % Or whatever. Note that the encoding and the font should match. If T1
 % does not look nice, try deleting the line with the fontenc.
 
+% These packages are used for drawing circuits
+\usepackage{tikz}
+\usepackage[siunitx]{circuitikz}
+\usepackage{siunitx}
+\usetikzlibrary{circuits.ee.IEC}
 
+% Information about the presentation 
 \title{Introduction to Machine Code}
 \subtitle{Understanding Computer Internals}
 \author{Fiona Bianchi}
@@ -65,21 +70,35 @@
 \end{frame}
 
 
-\section{Introduction}
+\section{Back to Basics}
 
-\subsection[Short First Subsection Name]{First Subsection Name}
+\subsection[Switches]{Simple Electronics Switches}
 
-\begin{frame}{Make Titles Informative. Use Uppercase Letters.}{Subtitles are optional.}
-  % - A title should summarize the slide in an understandable fashion
-  %   for anyone how does not follow everything on the slide itself.
+\begin{frame}{A Light Switch}
 
   \begin{itemize}
   \item
-    Use \texttt{itemize} a lot.
+    The simplest electronic cicruit
   \item
-    Use very short sentences or short phrases.
+    Switch has two positions, ``on'' or ``off''
+  \item
+    What has this got to do with computers?
   \end{itemize}
+
+  \begin{tikzpicture}[circuit ee IEC]
+    \draw 
+	(0, 0) to [battery] (0,2) node[spdt] (Sw) {}
+	(0, 0) to (Sw.in) node[left] {}
+		(Sw.out 1) node[right] {off}
+		(Sw.out 2) node[right] {} (2,0)
+	(2,0)	to [resistor] (4,0)
+	(4,0)	to [empty led] (4,2)
+	(4,2) to (0,2);
+  \end{tikzpicture}
 \end{frame}
+
+
+
 
 \begin{frame}{Make Titles Informative.}
 
