@@ -28,9 +28,8 @@
 
 % These packages are used for drawing circuits
 \usepackage{tikz}
-\usepackage[siunitx]{circuitikz}
-\usepackage{siunitx}
-\usetikzlibrary{circuits.ee.IEC}
+\usepackage[siunitx,european,americanresistors]{circuitikz}
+
 
 % Information about the presentation 
 \title{Introduction to Machine Code}
@@ -85,16 +84,19 @@
     What has this got to do with computers?
   \end{itemize}
 
-  \begin{tikzpicture}[circuit ee IEC]
+  \begin{tikzpicture}
     \draw 
-	(0, 0) to [battery] (0,2) node[spdt] (Sw) {}
-	(0, 0) to (Sw.in) node[left] {}
+	(0, 0) to [battery2, l_=5<\volt>] (0,2) 
+	to [short] (1,2)
+	node[spdt] (Sw) {}
+	(1, 2) to (Sw.in) node[left] {}
 		(Sw.out 1) node[right] {off}
-		(Sw.out 2) node[right] {} (2,0)
-	(2,0)	to [resistor] (4,0)
-	(4,0)	to [empty led] (4,2)
-	(4,2) to (0,2);
+		(Sw.out 2) node[right] {} (2,2)
+	(2,2)	to [R,label=270<\ohm>] (4,2)
+	(4,2)	to [empty led] (4,0)
+	(4,0) to [short] (0,0);
   \end{tikzpicture}
+  
 \end{frame}
 
 
