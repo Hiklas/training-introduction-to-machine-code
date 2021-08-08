@@ -63,6 +63,9 @@ make buildpdfs
 * [Tikz Circuit Gallery](https://texdoc.org/serve/circuitikz/0)
 * [SI Units package](https://ctan.org/pkg/siunitx)
 * [SI Units manual](https://anorien.csc.warwick.ac.uk/mirrors/CTAN/macros/latex/contrib/siunitx/siunitx.pdf)
+* [The |- and -| notation in Tikz](https://tex.stackexchange.com/questions/401425/tikz-what-exactly-does-the-the-notation-for-arrows-do)
+* [Another example of anchors](https://tex.stackexchange.com/questions/586713/circuitikz-tikz-x-and-y-coordinates-of-anchors-for-adjusting-lengths)
+* [Using columns and blocks in Beamer](https://tex.stackexchange.com/questions/356104/floating-an-image-to-the-right-in-beamer)
 
 
 ### Build Tools
