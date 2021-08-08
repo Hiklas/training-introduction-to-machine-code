@@ -66,6 +66,8 @@ make buildpdfs
 * [The |- and -| notation in Tikz](https://tex.stackexchange.com/questions/401425/tikz-what-exactly-does-the-the-notation-for-arrows-do)
 * [Another example of anchors](https://tex.stackexchange.com/questions/586713/circuitikz-tikz-x-and-y-coordinates-of-anchors-for-adjusting-lengths)
 * [Using columns and blocks in Beamer](https://tex.stackexchange.com/questions/356104/floating-an-image-to-the-right-in-beamer)
+* [Flipping nodes in tikz](https://tex.stackexchange.com/questions/414576/how-to-mirror-flip-node-in-tikz)
+* [Resizing tikz pictures](https://tex.stackexchange.com/questions/26846/how-to-scale-a-tikzpicture-including-texts)
 
 
 ### Build Tools
