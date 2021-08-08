@@ -101,7 +101,67 @@
   \end{columns}
 \end{frame}
 
+\begin{frame}{A Backwards Light Switch}
 
+  \begin{columns}
+    \column{0.5\textwidth}
+    \begin{itemize}
+    \item
+      Someone wires a switch wrongly
+    \item
+      You have to flick it to ``off'' to switch the light on 
+    \item
+      This is backwards, or the inverse of what we'd expect
+    \end{itemize}
+
+    \column{0.5\textwidth}
+    \resizebox{\textwidth}{!}{
+      \begin{tikzpicture}
+        \coordinate (as) at (4,3);
+        \draw 
+	(0, 3) to [battery2, l_=5<\volt>,] (0,0) 
+	(1, 3) node[spdt] (Sw1) {}
+	(0, 3) to [short] (Sw1.in)
+		(Sw1.out 1) node[right] {on} 
+	(Sw1.out 2) to [R,label=270<\ohm>] (as |- Sw1.out 2)
+	(as |- Sw1.out 2) to [empty led] (4,0)
+	(4,0) to (0,0);
+      \end{tikzpicture}
+      }
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Both Light Switches On}
+
+  \begin{columns}
+    \column{0.5\textwidth}
+    \begin{itemize}
+    \item
+      Two switches in series (one after the other)
+    \item
+      You have to flick both to ``on'' for the lamp to work 
+    \item
+      Switch 1 AND Switch 2
+    \end{itemize}
+
+    \column{0.5\textwidth}
+    \resizebox{\textwidth}{!}{
+      \begin{tikzpicture}
+        \coordinate (as) at (6,4);
+        \draw 
+	(0, 4) to [battery2, l_=5<\volt>,] (0,0) 
+	(1, 4) node[spdt] (Sw1) {}
+	(3,4) node[spdt, xscale=-1] (Sw2) {}
+	(0, 4) to [short] (Sw1.in)
+		(Sw1.out 1) node[right] {off}
+	(Sw1.out 2) to (Sw2.out 2) 
+	(Sw2.in) to [R,label=270<\ohm>] (as)
+	(as) to [empty led] (6,0)
+	(6,0) to (0,0);
+      \end{tikzpicture}
+      }
+  \end{columns}
+\end{frame}
 
 
 \begin{frame}{Make Titles Informative.}
