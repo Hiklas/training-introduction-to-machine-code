@@ -2,11 +2,18 @@
 # Build the presentation
 #
 
-.PHONY: buildpdfs clean
+.PHONY: buildpdfs clean overview processors 6502cpu
 
 .PRECIOUS: %.dvi
 
-buildpdfs: 001-Overview.pdf
+buildpdfs: overview processors 6502cpu
+
+overview: 001-Overview.pdf
+
+processors: 002-Processors.pdf
+
+6502cpu: 003-6502-CPU.pdf
+
 
 %.pdf: %.dvi
 	dvipdf $<

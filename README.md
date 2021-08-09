@@ -13,25 +13,79 @@ are lots of emulators, tools, and even hardware out there that can run
 
 ## Pre-requisites
 
-* Python - this is for running the simple 6502 examples
+* Python3 - this is for running the simple 6502 examples
 * TeX - specifically the TeXLive distribution for the slides and other material
 * GNUMake - for building documentation
+
+### Install TeX
+
+See the Notes section below for details about installing a TeX distribution 
+
+This is ONLY needed for generating the slides and other documentation material.
+Skip this step if you're only interested in the example 6502 machine code.
+
+
+### Python Setup
+
+Again see the notes section for details on how to install a Python distribution 
+for your computer.  Once you have this up and running you should be able to proceed
+with this setup for the tools.
+
+Run these commands
+
+```
+python3 -mvenv .matrix
+source .matrix/bin/activate
+pip install py65
+```
+
+These commands will work on Mac or Linux machines (or anything UNIX-like) and may 
+even work on Windows with the the [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+TODO: Need to update these docs/instructions for Windows OS (maybe with WSL)
+
 
 
 ## Notes
 
-### Installing TeX Live on a Mac
+### Installing TeX Live 
+
+#### On MacOS
 
 Download the installer from [MacTeX](http://www.tug.org/mactex/index.html)
 
 This is actually quite large (4Gb) so can take some time to download
 
+Run the installer and add this to your PATH to be able to allow the documents 
+to be built
+
+```
+export PATH=$PATH:/usr/local/texlive/2021/bin/universal-darwin
+```
+
+#### On Linux
+
+Don't rely on the TeX packages provided by your distribution, for example I believe the 
+versions of tools/packages that come with Ubuntu 20.04 are out of date compared to the 
+offical TeX setup.
+
+TODO: Provide more information here
+
+For now you can look at the scripts in the [latex-presentation-test](https://github.com/fionahiklas/latex-presentation-test) repo - this sets up a minimal TeX install under an Ubuntu Vagrant VM.
+
+The official [TeX Live 2021](https://www.tug.org/texlive/acquire-netinstall.html) installation can be used to install a full version of this distribution.
 
 
 
-### Installing on Linux
+### Installing Python
 
-TODO
+Python 3 should be installed by default on both MacOS and Linux.  Given that Python 2 is 
+no longer supported this should absolutely NOT be used for this example setup.  At this 
+point Python 3 should be available on almost all platforms.
+
+
+#### Installing on Windows
+
+TODO Add details of installing Python Windows
 
 
 ### Starting with Beamer solution
@@ -83,6 +137,7 @@ make buildpdfs
 ### Python 
 
 * [py65 documentation](https://py65.readthedocs.io/en/latest/)
+* [py65 github](https://github.com/mnaberez/py65)
 
 
 ### Licenses

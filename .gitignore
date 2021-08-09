@@ -286,3 +286,7 @@ TSWLatexianTemp*
 # Output file
 *.pdf
 
+# Python virtual environments
+.matrix
+
+
