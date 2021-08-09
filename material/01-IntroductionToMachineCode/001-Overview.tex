@@ -30,6 +30,8 @@
 \usepackage{tikz}
 \usepackage[siunitx,european,americanresistors]{circuitikz}
 
+% Packages for mathematical notation
+\usepackage{amsmath}
 
 % Information about the presentation 
 \title{Introduction to Machine Code}
@@ -163,6 +165,53 @@
   \end{columns}
 \end{frame}
 
+\begin{frame}{More Switches, but Why?}
+
+  \begin{itemize}
+  \item
+    We can have switches in parallel so if either is ``on'' the LED lights, this is OR
+  \item
+    We can have one switch in series with two in parallel - OR and AND
+  \item
+    We could have lots and lots of switches making up quite complicated circuits
+  \item
+    Why would we do that though?  How does this related to computers or programming?
+  \end{itemize}
+\end{frame}
+
+\subsection[Maths]{Doing Some Sums}
+
+\begin{frame}{How To Add Two Numbers Together}
+  \begin{columns}
+    \column{0.5\textwidth}
+    \begin{itemize}
+    \item
+      Start with the units (0-9) 
+    \item
+      Next move onto 10s (carry any extra 10s from units)
+    \item
+      Then hundreds (again adding in any 100s carried from 10s)
+    \item
+      And so on\dots
+    \item
+      Maths that most of us learn how to do and some still use\dots
+    \item
+      Well all of us still use, even if you didn't know you did
+    \end{itemize}
+
+    \column{0.5\textwidth}
+   
+  \end{columns}
+  
+\end{frame}
+
+
+
+
+
+
+
+
 
 \begin{frame}{Make Titles Informative.}
 
@@ -194,6 +243,7 @@
     \end{itemize}
   \end{itemize}
 \end{frame}
+
 
 
 \subsection{Second Subsection}
