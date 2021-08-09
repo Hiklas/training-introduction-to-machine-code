@@ -68,6 +68,8 @@ make buildpdfs
 * [Using columns and blocks in Beamer](https://tex.stackexchange.com/questions/356104/floating-an-image-to-the-right-in-beamer)
 * [Flipping nodes in tikz](https://tex.stackexchange.com/questions/414576/how-to-mirror-flip-node-in-tikz)
 * [Resizing tikz pictures](https://tex.stackexchange.com/questions/26846/how-to-scale-a-tikzpicture-including-texts)
+* [Showing carry in maths long addition](https://tex.stackexchange.com/questions/95812/how-to-show-carries-in-long-addition)
+* [Another option for presenting addition](https://tex.stackexchange.com/questions/11702/how-to-present-a-vertical-multiplication-addition)
 
 
 ### Build Tools
