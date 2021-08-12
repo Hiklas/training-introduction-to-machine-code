@@ -134,6 +134,11 @@ make buildpdfs
 * [Special targets including .PRECIOUS](https://www.gnu.org/software/make/manual/html_node/Special-Targets.html)
 
 
+### Graphics Tools
+
+* [Exporting EPS with transparent background in Affinity Photo](https://forum.affinity.serif.com/index.php?/topic/83939-eps-exported-but-has-background/)
+
+
 ### Python 
 
 * [py65 documentation](https://py65.readthedocs.io/en/latest/)

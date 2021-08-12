@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 296 609" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-480.498,-390.254)">
+        <g transform="matrix(0.367126,0,0,0.451878,394.32,289.361)">
+            <path d="M1039.03,352.58C1039.03,331.381 1017.84,314.171 991.749,314.171L282.011,314.171C255.919,314.171 234.735,331.381 234.735,352.58L234.735,1530.37C234.735,1551.57 255.919,1568.78 282.011,1568.78L991.749,1568.78C1017.84,1568.78 1039.03,1551.57 1039.03,1530.37L1039.03,352.58Z"/>
+        </g>
+        <g transform="matrix(1.15872,0,0,1.56778,-57.651,-230.009)">
+            <path d="M577.302,401.281C577.302,398.163 573.877,395.631 569.657,395.631L513.595,395.631C509.375,395.631 505.95,398.163 505.95,401.281L505.95,412.582C505.95,415.7 509.375,418.232 513.595,418.232L569.657,418.232C573.877,418.232 577.302,415.7 577.302,412.582L577.302,401.281Z"/>
+        </g>
+        <g transform="matrix(1.13042,0,0,1.11876,-85.534,-50.1912)">
+            <rect x="660.785" y="399.261" width="52.242" height="26.393"/>
+        </g>
+        <g transform="matrix(1.11671,0,0,0.46752,182.168,248.803)">
+            <path d="M378.974,377.544L315.515,377.544L321.276,402.807L374.159,402.807L378.974,377.544Z"/>
+        </g>
+        <g transform="matrix(1.11671,0,0,-0.46752,302.827,611.1)">
+            <path d="M378.974,377.544L315.515,377.544L321.276,402.807L374.159,402.807L378.974,377.544Z"/>
+        </g>
+        <g transform="matrix(0.998675,0,0,1.37641,0.67329,-168.78)">
+            <rect x="480.628" y="448.392" width="295.375" height="135.532" style="fill:rgb(255,140,0);"/>
+        </g>
+        <g transform="matrix(1,0,0,1,-35.8235,145.985)">
+            <text x="523.635px" y="832.892px" style="font-family:'HelveticaNeue', 'Helvetica Neue';font-size:66.667px;fill:rgb(255,140,0);">9V</text>
+        </g>
+        <g transform="matrix(1,0,0,1,25.1551,-316.044)">
+            <text x="523.635px" y="832.892px" style="font-family:'HelveticaNeue', 'Helvetica Neue';font-size:100px;fill:rgb(235,235,235);">-</text>
+        </g>
+        <g transform="matrix(1,0,0,1,137.908,-318.691)">
+            <text x="523.635px" y="832.892px" style="font-family:'HelveticaNeue', 'Helvetica Neue';font-size:100px;fill:rgb(235,235,235);">+</text>
+        </g>
+    </g>
+</svg>
