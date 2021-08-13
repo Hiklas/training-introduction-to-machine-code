@@ -260,6 +260,12 @@
       And so on\dots
     \item
       Exactly the same rules with use for base 10
+    \item
+      The columns in binary aren't units, 10s, 100s, 1000s, etc
+    \item
+      Instead units (1s), 2s, 4s, 8s, 16s, 32s, 64s, 128s, 256s, etc
+    \item
+      64 binary digits can represent \num{1.84467e19}
     \end{itemize}
 
     \column{0.25\textwidth}
@@ -299,6 +305,26 @@
     \includegraphics[scale=0.25]{../assets/9V-Battery.eps}
     
   \end{columns}
+\end{frame}
+
+\begin{frame}{Logic Levels}
+  \begin{itemize}
+  \item
+    ``on'' is \SI{5}{\volt} or \SI{3.3}{\volt} or even \SI{1.8}{\volt}
+  \item
+    ``off'' is \SI{0}{\volt} (the negative terminal on a battery)
+  \item
+    ``on'' is 1 in binary 
+  \item
+    ``off'' is 0 in binary
+  \item
+    A single switch can be used to represent a binary digit (0 and 1)
+  \item
+    Two switches means 1s and 2s
+  \item
+    8 switches can represent any whole number between 0 and 255
+  \end{itemize}
+
 \end{frame}
 
 
