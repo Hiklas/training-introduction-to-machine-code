@@ -33,6 +33,13 @@
 % Packages for mathematical notation
 \usepackage{amsmath}
 
+% Packages for including graphics images
+\usepackage{graphics}
+
+% Packages for misc purposes
+\usepackage{siunitx}
+
+
 % Information about the presentation 
 \title{Introduction to Machine Code}
 \subtitle{001 Overview}
@@ -273,7 +280,7 @@
 \subsection[Putting It Together]{Binary Logic}
 
 \begin{frame}{Switches And Binary}
-    \begin{columns}
+  \begin{columns}
     \column{0.75\textwidth}
     \begin{itemize}
     \item
@@ -281,19 +288,37 @@
     \item
       You can think of these as ``off'' and ``on'' for switches
     \item
-      Electric circuits have a ``+'' and ``-'' (also known as ``+ve'' and ``0\volts'')
+      Electric circuits have a ``+'' and ``-'' (also known as ``+ve'' and ``\SI{0}{\volt}'')
     \item
-      You can represents binary with ``+ve'' and ``0\volts'', 1 and 0 respectively
+      You can represents binary with ``+ve'' and ``\SI{0}{\volt}'', 1 and 0 respectively
     \item
       Binary logic can be implemented in electronics with switches
     \end{itemize}
-
+    
     \column{0.25\textwidth}
+    \includegraphics[scale=0.25]{../assets/9V-Battery.eps}
     
-    
+  \end{columns}
 \end{frame}
 
-\begin{frame}{Make Titles Informative.}
+
+\begin{frame}{TTL/CMOS}
+  \begin{columns}
+    \column{0.7\textwidth}
+    \begin{itemize}
+    \item
+      Transistor Transistor Logic - now superceded
+    \item
+      Complimentary Metal Oxide Semiconductor
+    \item
+      Integrated Circuits, aka ``chips''
+    \item
+      Lots and lots of switches!
+    \end{itemize}
+
+    \column{0.3\textwidth}
+    \includegraphics[scale=0.05]{../assets/IC-Picture.eps}
+  \end{columns}    
 \end{frame}
 
 
