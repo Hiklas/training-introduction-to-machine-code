@@ -29,6 +29,7 @@
 % These packages are used for drawing circuits
 \usepackage{tikz}
 \usepackage[siunitx,european,americanresistors]{circuitikz}
+\usetikzlibrary{circuits.logic.US}
 
 % Packages for mathematical notation
 \usepackage{amsmath}
@@ -324,28 +325,93 @@
   \item
     8 switches can represent any whole number between 0 and 255
   \end{itemize}
-
 \end{frame}
 
 
-\begin{frame}{TTL/CMOS}
+\begin{frame}{Chips}
   \begin{columns}
     \column{0.7\textwidth}
     \begin{itemize}
+    \item
+      There were two main types TTL and CMOS
     \item
       Transistor Transistor Logic - now superceded
     \item
       Complimentary Metal Oxide Semiconductor
     \item
-      Integrated Circuits, aka ``chips''
+      Now almost everything is CMOS - don't touch!
     \item
-      Lots and lots of switches!
+      What is inside chips?
     \end{itemize}
 
     \column{0.3\textwidth}
     \includegraphics[scale=0.05]{../assets/IC-Picture.eps}
   \end{columns}    
 \end{frame}
+
+
+\begin{frame}{Logic Gates}
+  \begin{itemize}
+  \item
+    Actually seen these before - switches
+  \item
+    Combinations of inputs result in outputs
+  \item
+    Two switches that both need to be ``on'' give logical AND
+  \item
+    Two switches either of which can be ``on'' is a logical OR
+  \item
+    Switches connect voltages (battery) to outputs which indicate logic levels/binary
+  \item
+    Chips can contain billions of switches, lets start small ...
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{AND Gate}
+  \begin{columns}
+    \column{0.7\textwidth}
+    \begin{itemize}
+    \item
+      Both inputs must be ``on'' aka binary ``1''
+    \item
+      Output for this condition is ``1''
+    \item
+      For any other combination output is ``off'' aka binary ``0''
+    \item
+      Remember that ``1'' is also a certain voltage level and ``0'', is \SI{0}{\volt}
+    \item
+      Truth table shows the relationship between input and output
+    \end{itemize}
+
+    \column{0.3\textwidth}
+    % TODO: Fix the input and output alignment, straighten the lines
+    \begin{tikzpicture}[circuit logic US]
+      \draw
+      (1,1) node[and gate] (G) {}
+      (0,1.5) node[anchor=east] (A) {$A$}
+      (0,0.5) node[anchor=east] (B) {$B$}
+      (2, 1) node[anchor=west] (O) {$Out$}
+      (A) -- (G.input 1)
+      (B) -- (G.input 2)
+      (O) -- (G.output);
+    \end{tikzpicture}
+    % TODO: Add some spacing between diagram and table
+    \begin{tabular}{ccc}
+      \hline
+      \textbf{A} & \textbf{B} & \textbf{Out} \\
+      \hline
+      0 & 0 & 0 \\
+      0 & 1 & 0 \\
+      1 & 0 & 0 \\
+      1 & 1 & 1 \\
+      \hline
+    \end{tabular}
+
+    
+  \end{columns}    
+\end{frame}
+
 
 
 
