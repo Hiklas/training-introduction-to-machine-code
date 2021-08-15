@@ -124,6 +124,7 @@ make buildpdfs
 * [Resizing tikz pictures](https://tex.stackexchange.com/questions/26846/how-to-scale-a-tikzpicture-including-texts)
 * [Showing carry in maths long addition](https://tex.stackexchange.com/questions/95812/how-to-show-carries-in-long-addition)
 * [Another option for presenting addition](https://tex.stackexchange.com/questions/11702/how-to-present-a-vertical-multiplication-addition)
+* [D-type flip-flop](https://latexdraw.com/draw-d-flip-flop-with-circuitikz/)
 
 
 ### Build Tools

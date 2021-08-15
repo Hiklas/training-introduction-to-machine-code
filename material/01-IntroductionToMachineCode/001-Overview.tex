@@ -548,6 +548,67 @@
 \end{frame}
 
 
+\subsection[memory]{Remembering Results}
+
+\begin{frame}{Flip flops}
+  \begin{itemize}
+  \item
+    A circuit that maintains a state based on input
+  \item
+    Latches data given to it and ``clocked'' in 
+  \item
+    Basis of some memory inside CPUs, e.g. registers
+  \end{itemize}
+
+  \begin{tikzpicture}
+    
+    % Draw and gates
+    \node[ieeestd and port, fill=yellow] (and1) at (0,2) {};
+    \node[ieeestd and port, fill=yellow] (and2) at (0,-2) {};
+    
+    % Draw nor gates
+    \draw (and1.out) -- ++(2.5,0) node
+          [
+            ieeestd nor port,
+            fill=violet!30,
+            anchor=in 1
+          ] (nor1) {};
+          
+          \draw (and2.out) -- ++(2.5,0) node
+                [
+                  ieeestd nor port,
+                  fill=violet!30,
+                  anchor=in 2
+                ] (nor2) {};
+                
+                \draw (nor1.in 2) -| ++ (-0.2,-0.85) -- ++(3,-1.5) coordinate(a) |- (nor2.out);
+                \draw (nor2.in 1) -| ++ (-0.2,0.85) -- ++(3,1.5) |- (nor1.out);
+                
+                % Clock
+                \draw (and1.in 2) -- (and2.in 1)node[midway](clk){};
+                \draw (clk.center) -- ++(-0.5,0) node[left]{Clk};
+                
+                % Output labels
+                \draw (nor1.out -| a) -- ++(0.75,0) node[right]{Q(t)};
+                \draw (nor2.out -| a) -- ++(0.75,0) node[right]{Q(t)$^{'}$};
+                
+                \draw (and2.in 2) -- ++(-2.25,0) coordinate(a2) node[left=0.1cm]{D};
+                
+                % Not port
+                \node
+                    [
+                      ieeestd not port,
+                      rotate=90,
+                      scale=0.5,
+                      fill=cyan!30
+                    ](not) at (-2.75,-0.75){};
+                    
+                    \draw (not.in) |- (a2) (not.out) |- (and1.in 1)  ;
+                    
+  \end{tikzpicture}
+\end{frame}
+
+
 \section{Summary}
 
 \begin{frame}{Summary}
