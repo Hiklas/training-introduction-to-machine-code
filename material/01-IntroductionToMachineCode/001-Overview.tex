@@ -406,12 +406,126 @@
       1 & 0 & 0 \\
       1 & 1 & 1 \\
       \hline
-    \end{tabular}
-
-    
+    \end{tabular}    
   \end{columns}    
 \end{frame}
 
+
+\begin{frame}{OR Gate}
+  \begin{columns}
+    \column{0.7\textwidth}
+    \begin{itemize}
+    \item
+      Either input can be ``on'' aka binary ``1''
+    \item
+      Output for this condition is ``1''
+    \item
+      You get a ``0'' or ``off'' only when both inputs are ``0''
+    \item
+      Again, the truth table shows the relationship between input and output
+    \end{itemize}
+
+    \column{0.3\textwidth}
+    % TODO: Fix the input and output alignment, straighten the lines
+    \begin{tikzpicture}[circuit logic US]
+      \draw
+      (1,1) node[or gate] (G) {}
+      (0,1.5) node[anchor=east] (A) {$A$}
+      (0,0.5) node[anchor=east] (B) {$B$}
+      (2, 1) node[anchor=west] (O) {$Out$}
+      (A) -- (G.input 1)
+      (B) -- (G.input 2)
+      (O) -- (G.output);
+    \end{tikzpicture}
+    % TODO: Add some spacing between diagram and table
+    \begin{tabular}{ccc}
+      \hline
+      \textbf{A} & \textbf{B} & \textbf{Out} \\
+      \hline
+      0 & 0 & 0 \\
+      0 & 1 & 1 \\
+      1 & 0 & 1 \\
+      1 & 1 & 1 \\
+      \hline
+    \end{tabular}    
+  \end{columns}    
+\end{frame}
+
+
+\begin{frame}{More Logic Gates}
+  \begin{itemize}
+  \item
+    ``AND'' and ``OR'' very much like their English meanings
+  \item
+    There are other gates, XOR, NOT (we saw this already, ``off'' means ``on'')
+  \item
+    Also combination gates, NAND, NOR - AND and OR with a NOT respectively
+  \item
+    Why do we have logic gates?  What use are they?
+  \item
+    On their own they can have some use, e.g. burglar alarm with multiple sensors, and one can trip the alarm, this would be an OR gate with multiple inputs
+  \item
+    Compare two binary numbers can be done with several XNOR (Exclusive NOR) gates and an AND gate with multiple inputs (one for each digit being compared)
+  \item
+    Side note: NOR, XNOR, and others can be constructed from AND/NAND OR/NOR combinations
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{More Exotic Gates}
+  \begin{itemize}
+  \item
+    Individual gates, or small collections, can be useful in circuits
+  \item
+    Ultimately though we're looking at computing
+  \item
+    How can gates be used to create a Central Processing Unit (CPU)?
+  \item
+    How can gates help with connecting the CPU to the outside world?
+  \item
+    How can gates help with storage of program and data in a computer?
+  \item
+    Simple answer have LOTS of gates to construct more complex circuits
+  \item
+    Remeber though: the basic building blocks are still, ultimately, switches
+  \end{itemize}
+\end{frame}
+
+
+\subsection[LogicComponents]{Doing Sums With Gates}
+
+\begin{frame}{Adding Two Binary Digits}
+  \begin{columns}
+    \column{0.6\textwidth}
+    \begin{itemize}
+    \item
+      In binary add two numbers less than 2 - remember number bases
+    \item
+      Addition of binary numbers can be written as a truth table
+    \item
+      Given the truth table there are ways to convert into standard gates
+    \item
+      Result and carry - the carry is the number of twos from the sum, 1 or 0
+    \item
+      Only three possible answers 0, 1, or 2 - which is 0 units and carry 
+    \item
+      A1, A2 addends for sum, R is result, and C carry
+    \end{itemize}
+    
+
+    \column{0.4\textwidth}
+    \begin{tabular}{cccc}
+      \hline
+      \textbf{A1} & \textbf{A2} & \textbf{R} & \textbf{C}\\
+      \hline
+      0 & 0 & 0 & 0 \\
+      0 & 1 & 1 & 0 \\
+      1 & 0 & 1 & 0 \\
+      1 & 1 & 0 & 1 \\
+      \hline
+    \end{tabular}
+  \end{columns}  
+\end{frame}
 
 
 
