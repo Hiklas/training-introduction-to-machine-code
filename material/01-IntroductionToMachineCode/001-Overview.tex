@@ -560,7 +560,9 @@
     Basis of some memory inside CPUs, e.g. registers
   \end{itemize}
 
-  \begin{tikzpicture}
+  % Credit to https://latexdraw.com/draw-d-flip-flop-with-circuitikz/ for
+  % this picture of a D-type latch
+  \begin{tikzpicture}[scale=0.8]
     
     % Draw and gates
     \node[ieeestd and port, fill=yellow] (and1) at (0,2) {};
@@ -608,6 +610,26 @@
   \end{tikzpicture}
 \end{frame}
 
+\begin{frame}{Registers}
+  \begin{itemize}
+  \item
+    One flip-flop can store a single binary digit (bit) of data
+  \item
+    Using eight flip-flops can store a byte of data, 32, 64, etc
+  \item
+    CPUs have ``registers'' for storage of operands and results
+  \item
+    Registers maintain the state of the CPU at any given time
+  \item
+    Flip-flips can also be used to buffer data read from memory
+  \item
+    Some memory external to the CPU uses flip-flops/latches (cache, SRAM)
+  \item
+    Main memory is something else, DRAM for example, or Flash memory
+  \end{itemize}
+\end{frame}
+
+
 
 \section{Summary}
 
@@ -619,6 +641,8 @@
     Computers are \alert{lots of switches}
   \item
     Computers use \alert{binary arithmetic}
+  \item
+    CPUs contain \alert{circuits made of gates}
   \end{itemize}
   
   % The following outlook is optional.
@@ -628,9 +652,9 @@
     Outlook
     \begin{itemize}
     \item
-      Something you haven't solved.
+      How do all these building blocks get us to processors?
     \item
-      Something else you haven't solved.
+      How do processors run instructions?
     \end{itemize}
   \end{itemize}
 \end{frame}
