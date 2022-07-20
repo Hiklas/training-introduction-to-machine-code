@@ -65,6 +65,11 @@
 % the following command: 
 %\beamerdefaultoverlayspecification{<+->}
 
+% From the pympress application
+\addtobeamertemplate{note page}{}{\thispdfpagelabel{notes:\insertframenumber}}
+
+% Show the notes
+\setbeameroption{show notes}
 
 \begin{document}
 
@@ -109,6 +114,10 @@
 	(4,0) to (0,0);
     \end{tikzpicture}
   \end{columns}
+
+  \note<1>[item]{Explain about light switches in the home.  A torch switch.  Ignition on a car}
+  \note<1>[item]{Switches are like holding the wires apart and then bringing them together}
+  \note<1>[item]{In horror or movies set in olden times, knife switches - makes a contact with metal bar}
 \end{frame}
 
 

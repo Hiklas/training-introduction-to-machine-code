@@ -11,11 +11,32 @@ relatively simple, and (IMHO), well-loved, CPU, the 6502.  Thankfully there
 are lots of emulators, tools, and even hardware out there that can run 
 6502 machine code thanks to the efforts of many people.
 
+
+## Quickstart
+
+* Install TeX 
+* Install pympress
+* Build PDF files
+
+```
+cd material/01-IntroductionToMachineCode
+make buildpdfs
+```
+
+* For a given presentation run pympress
+
+```
+pympress <filename>
+```
+
+
+
 ## Pre-requisites
 
-* Python3 - this is for running the simple 6502 examples
 * TeX - specifically the TeXLive distribution for the slides and other material
+* Python3 - this is for running the simple 6502 examples
 * GNUMake - for building documentation
+* Pympress - for displaying the presentations
 
 ### Install TeX
 
@@ -138,6 +159,12 @@ make buildpdfs
 ### Graphics Tools
 
 * [Exporting EPS with transparent background in Affinity Photo](https://forum.affinity.serif.com/index.php?/topic/83939-eps-exported-but-has-background/)
+* [Inkscape](https://inkscape.org)
+
+
+### Presentation Tools
+
+* [pympress](https://github.com/Cimbali/pympress)
 
 
 ### Python 
