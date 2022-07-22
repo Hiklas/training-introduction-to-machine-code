@@ -156,6 +156,7 @@ make buildpdfs
 * [Make pattern rules](https://www.gnu.org/software/make/manual/html_node/Pattern-Examples.html#Pattern-Examples)
 * [Why is make removing intermediate files](https://stackoverflow.com/questions/47447369/gnu-make-removing-intermediate-files)
 * [Special targets including .PRECIOUS](https://www.gnu.org/software/make/manual/html_node/Special-Targets.html)
+* [Make automatic variables](https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html)
 
 
 ### Graphics Tools
