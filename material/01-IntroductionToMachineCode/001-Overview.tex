@@ -69,7 +69,9 @@
 \addtobeamertemplate{note page}{}{\thispdfpagelabel{notes:\insertframenumber}}
 
 % Show the notes
-\setbeameroption{show notes}
+\ifdefined\isnotes
+  \setbeameroption{show only notes}
+\fi
 
 \begin{document}
 
@@ -128,10 +130,13 @@
     \begin{itemize}
     \item
       Someone wires a switch wrongly
+      \note<1>[item]{If you have a light switch with an on/off position this is often just two contacts, one unused}
     \item
       You have to flick it to ``off'' to switch the light on 
     \item
       This is backwards, or the inverse of what we'd expect
+      \note<1>[item]{For me I get annoyed with those lights controlled by switches upstairs and downstairs, they often
+      don't line up with other switches!}
     \end{itemize}
 
     \column{0.5\textwidth}
