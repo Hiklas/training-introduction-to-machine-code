@@ -62,6 +62,11 @@
   \setbeameroption{show only notes}
 \fi
 
+% Show notes and slides
+\ifdefined\ishandout
+\setbeameroption{show notes}
+\fi
+
 \begin{document}
 
 \begin{frame}
@@ -91,13 +96,20 @@
 
 \subsection[Appearance]{What does it look like?}
 
-\begin{frame}{A frame}
-  \begin{itemize}
-  \item
-    One item
-  \item
-    Two item
-  \end{itemize}
+\begin{frame}{Chip Die}
+  \begin{columns}
+    \column{0.25\textwidth}
+    \begin{itemize}
+    \item
+      One item
+    \item
+      Two item
+    \end{itemize}
+
+    \column{0.75\textwidth}
+    \includegraphics[scale=0.25]{../assets/MOS_6502_die.eps}
+    
+  \end{columns}
 \end{frame}
 
 
@@ -198,7 +210,7 @@
   \frametitle{References}
   \begin{thebibliography}{MOS 6502 Die}
   \bibitem[MOS 6502 Die]{MOS6502Die}
-    Wikipedia: {\em https://commons.wikimedia.org/wiki/File:MOS_6502_die.jpg}
+    Wikipedia: {\url{https://commons.wikimedia.org/wiki/File:MOS_6502_die.jpg}}
   \end{thebibliography}
 \end{frame}
 

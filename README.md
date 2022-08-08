@@ -147,6 +147,7 @@ make buildpdfs
 * [Another option for presenting addition](https://tex.stackexchange.com/questions/11702/how-to-present-a-vertical-multiplication-addition)
 * [D-type flip-flop](https://latexdraw.com/draw-d-flip-flop-with-circuitikz/)
 * [Adding notes to beamer presentation](https://tex.stackexchange.com/questions/48402/personal-notes-when-preparing-a-talk-with-latex-beamer-class)
+* [What graphics formats are supported](https://tex.stackexchange.com/questions/1072/which-graphics-formats-can-be-included-in-documents-processed-by-latex-or-pdflat)
 
 
 

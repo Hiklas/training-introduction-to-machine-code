@@ -59,8 +59,14 @@
 
 % Show the notes
 \ifdefined\isnotes
-  \setbeameroption{show only notes}
+\setbeameroption{show only notes}
 \fi
+
+% Show notes and slides
+\ifdefined\ishandout
+\setbeameroption{show notes}
+\fi
+
 
 \begin{document}
 
