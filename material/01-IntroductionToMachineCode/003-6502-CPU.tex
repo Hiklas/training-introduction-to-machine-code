@@ -57,6 +57,10 @@
 % the following command: 
 %\beamerdefaultoverlayspecification{<+->}
 
+% Show the notes
+\ifdefined\isnotes
+  \setbeameroption{show only notes}
+\fi
 
 \begin{document}
 
@@ -99,7 +103,7 @@
 
 \subsection[Internals]{What's inside?}
 
-\begin{frame}{A frame}
+\begin{frame}{Processor Die}
   \begin{itemize}
   \item
     One item
@@ -186,6 +190,16 @@
       Something else you haven't solved.
     \end{itemize}
   \end{itemize}
+\end{frame}
+
+\section{Bibliogrphy}
+
+\begin{frame}{Bibliography 1}
+  \frametitle{References}
+  \begin{thebibliography}{MOS 6502 Die}
+  \bibitem[MOS 6502 Die]{MOS6502Die}
+    Wikipedia: {\em https://commons.wikimedia.org/wiki/File:MOS_6502_die.jpg}
+  \end{thebibliography}
 \end{frame}
 
 
