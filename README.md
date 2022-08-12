@@ -148,7 +148,8 @@ make buildpdfs
 * [D-type flip-flop](https://latexdraw.com/draw-d-flip-flop-with-circuitikz/)
 * [Adding notes to beamer presentation](https://tex.stackexchange.com/questions/48402/personal-notes-when-preparing-a-talk-with-latex-beamer-class)
 * [What graphics formats are supported](https://tex.stackexchange.com/questions/1072/which-graphics-formats-can-be-included-in-documents-processed-by-latex-or-pdflat)
-
+* [Centering images](https://tex.stackexchange.com/questions/553476/beamer-centering-only-figure-in-column)
+* [Using citations](https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex)
 
 
 ### Build Tools
