@@ -139,12 +139,35 @@
 
 \subsection[Internals]{What's inside?}
 
-\begin{frame}{Processor Die}
+\begin{frame}{Architecture}
   \begin{itemize}
   \item
-    One item
+    Registers
+    \begin{itemize}
+    \item
+      A - Accumulator
+    \item
+      X
+    \item
+      Y - Index Register
+    \end{itemize}
   \item
-    Two item
+    P - Status Register
+  \item
+    PC - Program Counter
+  \item
+    SP - Stack Pointer
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Accumulator}
+  \begin{itemize}
+  \item
+    Destination for mathematical operations
+  \item
+    Source for logic and other operations
+  \item
+    Operations on accumulator impact status register
   \end{itemize}
 \end{frame}
 
