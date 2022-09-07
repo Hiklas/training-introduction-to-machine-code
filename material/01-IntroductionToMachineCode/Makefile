@@ -2,9 +2,11 @@
 # Build the presentation
 #
 
-.PHONY: buildpdfs clean overview processors 6502cpu
+.PHONY: all buildpdfs clean overview processors 6502cpu
 
 .PRECIOUS: %.dvi
+
+all: buildpdfs
 
 buildpdfs: overview processors 6502cpu
 

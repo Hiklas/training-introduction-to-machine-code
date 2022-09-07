@@ -91,25 +91,26 @@
     \begin{itemize}
     \item
       Designed by Charles Babbage \cite{BabbageBio}
-      \note{Implementation of No.0 and partial No.1}
-      \note{Designed No.2 Difference Engine}
-      \note{No.0 was completed in 1822}
+      \note[item]{Implementation of No.0 and partial No.1}
+      \note[item]{Designed No.2 Difference Engine}
+      \note[item]{No.0 was completed in 1822}
     \item
       Completely mechanical calculating engine 
     \item
       Superseded in design by analytical engine \cite{AnalyticalEngine}
-      \note{Only designed never implemented in Babbage' lifetime}
-      \note{General purpose computer design with processor, memory}
-      \note{ALU - Arithmetic and Logic unit: tests, branches, loops}
-    \item
+      \note[item]{Only designed never implemented in Babbage's lifetime}
+      \note[item]{General purpose computer design with processor, memory}
+      \note[item]{ALU - Arithmetic and Logic unit: tests, branches, loops}
+      
     \end{itemize}
 
     \column{0.50\textwidth}
     \begin{center}
-      \includegraphics[scale=0.25]{../assets/Difference_Engine_London.eps}
+      \includegraphics[scale=0.4]{../assets/Difference_Engine_London.eps}
       \cite{BabbageEngine} Difference Engine No.2
     \end{center}
 
+  \end{columns}
 \end{frame}
 
 
@@ -141,24 +142,70 @@
 
 \subsection[Maths]{Simple maths}
 
-\begin{frame}{A frame}
+\begin{frame}{Whole Numbers}
   \begin{itemize}
   \item
-    One item
+    Addition, Subtraction, Multiplication, Division
   \item
-    Two item
+    Add/Subtract easy in hardware
+  \item
+    Multiply/divide more complicated
+  \item
+    Fixed sized numbers, 8bit, 16bit, 32bit, 64bit
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Logical Operations}
+  \begin{itemize}
+  \item
+    Again fixed size numbers
+  \item
+    Operations on binary bits
+  \item
+    AND, OR, XOR, NOT
+  \item
+    Used for transforming or manipulating data (bitmasks for example)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Comparisons and Tests}
+  \begin{itemize}
+  \item
+    Greater than, less than, equal to zero
+  \item
+    Used as conditions on branches, e.g. branch if not zero
+  \item
+    Uses basic maths operations, e.g. subtract
+  \item
+    Maths operations can trigger carry flag
   \end{itemize}
 \end{frame}
 
 
 \subsection[Memory]{Remembering Data}
 
-\begin{frame}{A frame}
+\begin{frame}{Types of Memory}
   \begin{itemize}
   \item
-    One item
+    Registers: inside the processor
   \item
-    Two item
+    Cache: also often on the same die as the CPU
+  \item
+    RAM: Random Access Memory - read/write
+    \begin{itemize}
+    \item
+      Static RAM (SRAM)
+    \item
+      Dynamic RAM (DRAM)
+    \end{itemize}
+  \item
+    ROM: Read Only memory
+    \begin{itemize}
+    \item
+      EPROM: Erasable Programmable Read Only Memory
+    \item
+      EEPROM: Electrically Eraseable
+    \end{itemize}
   \end{itemize}
 \end{frame}
 
@@ -244,13 +291,14 @@
 
 \begin{frame}{Bibliography 1}
   \frametitle{References}
+  
   \begin{thebibliography}{Babbage Difference Engine}
   \bibitem[Babbage Difference Engine]{BabbageEngine}
     Science Museum London, Difference Engine No.2: {\url{https://collection.sciencemuseumgroup.org.uk/objects/co526657/difference-engine-no-2-designed-by-charles-babbage-built-by-science-museum-difference-engine}}
   \bibitem[Babbage Biography]{BabbageBio} 
     Charles Babbage Biography with references: {\url{https://mathshistory.st-andrews.ac.uk/Biographies/Babbage/}}
   \bibitem[Analytical Engine]{AnalyticalEngine}
-    Babbge Analytical Engine: {\url{https://en.wikipedia.org/wiki/Analytical_Engine}}
+    Babbage Analytical Engine: {\url{https://en.wikipedia.org/wiki/Analytical_Engine}}
   \end{thebibliography}
 \end{frame}
 
