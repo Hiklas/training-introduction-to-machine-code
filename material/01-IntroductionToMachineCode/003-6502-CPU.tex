@@ -33,6 +33,14 @@
 % Packages for mathematical notation
 \usepackage{amsmath}
 
+% Trying to split long URLs across lines
+% From this post suggesting breakurl: https://stackoverflow.com/questions/2640111/url-latex-linebreak
+% The breakurl package: https://ctan.org/pkg/breakurl?lang=en
+% Example of options: https://tex.stackexchange.com/questions/298851/linebreak-in-long-url-breakurl-wont-break-it
+\usepackage{hyperref}
+\usepackage[hyphenbreaks]{breakurl}
+
+
 % Information about the presentation 
 \title{Introduction to Machine Code}
 \subtitle{003 6502 CPU}
@@ -260,11 +268,17 @@
   % needs to be laid out in the bibliography 
   \begin{thebibliography}{6502 Wikipedia Page}
   \bibitem[MOS 6502 Die]{MOS6502Die}
-    Die image: {\url{https://commons.wikimedia.org/wiki/File:MOS_6502_die.jpg}}
+    Die image
+    \newblock {\url{https://commons.wikimedia.org/wiki/File:MOS_6502_die.jpg}}
+    
   \bibitem[MOS 6502 Chip]{MOS6502Chip}
-    Chip image: {\url{https://commons.wikimedia.org/wiki/File:MOS6502.svg}}
+    Chip image
+    \newblock {\url{https://commons.wikimedia.org/wiki/File:MOS6502.svg}}
+
   \bibitem[6502 Wikipedia Page]{6502Wikipedia}
-    Wikipedia: {\url{https://en.wikipedia.org/wiki/MOS_Technology_6502}}
+    6502 Wikipedia Page
+    \newblock {\url{https://en.wikipedia.org/wiki/MOS_Technology_6502}}
+
   \end{thebibliography}
 \end{frame}
 

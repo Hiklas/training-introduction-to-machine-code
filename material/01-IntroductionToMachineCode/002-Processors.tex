@@ -33,6 +33,13 @@
 % Packages for mathematical notation
 \usepackage{amsmath}
 
+% Trying to split long URLs across lines
+% From this post suggesting breakurl: https://stackoverflow.com/questions/2640111/url-latex-linebreak
+% The breakurl package: https://ctan.org/pkg/breakurl?lang=en
+% Example of options: https://tex.stackexchange.com/questions/298851/linebreak-in-long-url-breakurl-wont-break-it
+\usepackage{hyperref}
+\usepackage[hyphenbreaks]{breakurl}
+
 % Information about the presentation 
 \title{Introduction to Machine Code}
 \subtitle{002 Processors}
@@ -338,13 +345,6 @@
     The rebuild colossus at \cite{TNMOC} TNMOC
     \newblock {\url{https://www.tnmoc.org/colossus}}
 
-  \bibitem[TNMOC]{TNMOC}
-    The National Museum Of Computing
-    \newblock {\url{https://www.tnmoc.org/}}
-
-  \bibitem[Bletchley Park]{Bletchley}
-    Bletchley Park
-    \newblock {\url{https://bletchleypark.org.uk}}
   \end{thebibliography}
 \end{frame}
 
@@ -352,9 +352,18 @@
   \frametitle{References}
   
   \begin{thebibliography}{ColossusRebuild}
+  \bibitem[TNMOC]{TNMOC}
+    The National Museum Of Computing
+    \newblock {\url{https://www.tnmoc.org/}}
+    
+  \bibitem[Bletchley Park]{Bletchley}
+    Bletchley Park
+    \newblock {\url{https://bletchleypark.org.uk}}
+    
   \bibitem[Colossus Operation]{Colossus1943}
     Colossus being operated by Dorothy Du Boisson (left) and Elsie Booker (right)
     \newblock {\url{https://en.wikipedia.org/wiki/Colossus_computer\#/media/File:Colossus.jpg}}
+
   \bibitem[Colossus Rebuild]{ColossusRebuild}
     Rebuild of Colossus supervised by Tony Sale (Right)
     \newblock {\url{https://en.wikipedia.org/wiki/Colossus_computer\#/media/File:ColossusRebuild_11.jpg}}
