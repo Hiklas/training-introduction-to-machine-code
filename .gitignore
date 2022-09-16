@@ -289,4 +289,9 @@ TSWLatexianTemp*
 # Python virtual environments
 .matrix
 
+# Binary assmbler files
+*.bin
+*.o65
+*.labels
+
 

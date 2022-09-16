@@ -35,6 +35,7 @@ pympress <filename>
 
 * TeX - specifically the TeXLive distribution for the slides and other material
 * Python3 - this is for running the simple 6502 examples
+* xa65 - 6502 assembler
 * GNUMake - for building documentation
 * Pympress - for displaying the presentations
 
@@ -63,6 +64,23 @@ pip install py65
 These commands will work on Mac or Linux machines (or anything UNIX-like) and may 
 even work on Windows with the the [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 TODO: Need to update these docs/instructions for Windows OS (maybe with WSL)
+
+### xa65 Setup
+
+This is available from [homebrew](https://brew.sh) on Macs so you can simply run 
+
+```
+brew install xa65
+```
+
+For Linux distributions use your favorite package manager to install `xa65`, the following packages are available
+
+* [Debian](https://packages.debian.org/stretch/xa65)
+* [Arch Linux](https://archlinux.org/packages/?q=xa)
+* [Fedora](https://src.fedoraproject.org/rpms/xa/tree/f36)
+
+Alternatively you can download and compile the source code for xa which can be found 
+[here](http://www.floodgap.com/retrotech/xa/) there is also a [github repo](https://github.com/fachat/xa65)
 
 
 
