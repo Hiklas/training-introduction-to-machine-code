@@ -70,6 +70,17 @@ you need to convert 0x1C00 to decimal using this command
 echo "ibase=16; 1C00" | bc
 ```
 
+The `xa` command needs some explaining
+
+* The `-v` just gives versbose output
+* The `-bt 7168` sets the address of the _text segment_
+* There are three segments - text, data, and block storage segment
+* The _text_ segment is where the code goes 
+* We need the code to start at the correct address
+* Instructions such as `jmp` and `jsr` can use absolute addresses
+* The `-l swapcase.lables` just writes a file with address values 
+
+
 Back in the `py65mon` terminal run this command
 
 ```
@@ -81,6 +92,9 @@ You can now check the code that was loaded
 ```
 disassemble lomem:lomem++10
 ```
+
+__NOTE:__ In the `py65mon` too decimal numbers are proceeded by a `+` and base 10
+is needed here because trying the same command with `+$0a` fails to parse
 
 Which should give the following output
 
@@ -96,6 +110,19 @@ $1c0a  4c 00 1c  JMP lomem
 ```
 
 
+
+## References
+
+### UNIX/Linux
+
+* [Converting between numbers bases using bc](https://www.cyberciti.biz/faq/linux-unix-convert-hex-to-decimal-number/)
+
+
+## 6502 Tools
+
+* [xa source code](https://github.com/fachat/xa65/blob/master/xa/src/xa.c)
+  * Needed to look at this because the `-A` and `-bt` arguments weren't being interpretted correctly
+  * Turns out the code is using the [atoi](https://linux.die.net/man/3/atoi) function which only works with base 10
 
 
 [py65github]: https://github.com/mnaberez/py65
