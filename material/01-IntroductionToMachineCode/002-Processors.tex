@@ -326,12 +326,26 @@
 
 \subsection[IO]{Input/Output}
 
-\begin{frame}{A frame}
+\begin{frame}{Types of IO}
   \begin{itemize}
   \item
-    One item
+    Memory-mapped
   \item
-    Two item
+    Buses
+  \item
+    Interrupts
+  \item
+    Examples:
+    \begin{itemize}
+    \item
+      RS232 - Serial Connection
+    \item
+      Centronics, SCSI, IDE - Parallel
+    \item
+      USB, SATA, Thunderbolt - Serial again
+    \item
+      PCI - Parallel bus
+    \end{itemize}
   \end{itemize}
 \end{frame}
 
@@ -342,43 +356,73 @@
 \begin{frame}{A frame}
   \begin{itemize}
   \item
-    Punched tape
+    \includegraphics[width=30mm]{../assets/PaperTapes-5and8Hole.eps}
+    \cite{PaperTape}
   \item
-    DIP Switches
+    \includegraphics[width=30mm]{../assets/DIP_switch_01_Pengo.eps}
+    \cite{DIPSwitchImage}    
   \item
-    EPROM Programmers
+    \includegraphics[width=30mm]{../assets/Programmer_conitec_galep5.eps}
+    \cite{EPROMProgrammer}   
+  \item
+    Having a computer already helps alot when programming a new devices!
   \end{itemize}
 \end{frame}
 
 \subsection[Assembly]{Assembly Language}
 
-\begin{frame}{A frame}
+\begin{frame}{Machine code mnemonic}
   \begin{itemize}
   \item
-    One item
+    Still low-level
   \item
-    Two item
+    Mnemonics represent instructions
+  \item
+    Some help with pre-processing, labels, variables
+  \item
+    Assembly is *still* used today, see later ...
   \end{itemize}
 \end{frame}
 
 
 \subsection[Compilers]{Compilers}
 
-\begin{frame}{A frame}
+\begin{frame}{Compilation}
   \begin{itemize}
   \item
-    One item
+    High level programming languages
   \item
-    Two item
+    Describe algorithms in a more readable way
+  \item
+    Describe abstract concepts
+  \item
+    Needs to be converted into something the processor understands
+  \item
+    ... yep, that would be assembly language then machine code!
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Compiled Languages}
+  \begin{itemize}
+  \item
+    C/C++ - *still* the most popular/used languages
+  \item
+    Go, Swift, Rust
+  \item
+    Java, C\#, Erlang - compiled to byte code NOT machine code 
+  \item
+    Output is assembly language or binary object files
+  \item
+    Linker stage creates executables
   \end{itemize}
 \end{frame}
 
 
 
+\section{Conclusion}
 
-
-\section{Summary}
-
+\subsection[Summary]{Summary}
+  
 \begin{frame}{Summary}
 
   % Keep the summary *very short*.
@@ -400,13 +444,13 @@
     \item
       How does the 6502 processor work?
     \item
-      What does machine code look like?
+      How do you programme a 6502 processor?
     \end{itemize}
   \end{itemize}
 \end{frame}
 
 
-\section{Bibliogrphy}
+\subsection{Bibliogrphy}
 
 \begin{frame}{Bibliography 1}
   \frametitle{References}
@@ -452,8 +496,6 @@
     \newblock {\url{https://en.wikipedia.org/wiki/Colossus_computer\#/media/File:ColossusRebuild_11.jpg}}
   \end{thebibliography}
 \end{frame}
-
-
 
 \begin{frame}{Bibliography 3}
   \frametitle{References}
